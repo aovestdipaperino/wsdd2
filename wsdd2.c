@@ -653,11 +653,13 @@ int main(int argc, char **argv)
 		case 'N':
 			if (optarg != NULL && strlen(optarg) > 1) {
 				netbiosname = strdup(optarg);
+				printf("Netbios name: %s", netbiosname);
 			}
 			break;
 		case 'G':
 			if (optarg != NULL && strlen(optarg) > 1) {
 				workgroup = strdup(optarg);
+				printf("Workgroup: %s", workgroup);
 			}
 			break;
 		case '?':
